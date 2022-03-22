@@ -1,0 +1,26 @@
+<div>
+    <h2> Listado de Productos: </h2>
+    <table class="table w-70 ">
+    <thead class="text-head">
+        <tr>
+        <th scope="col" class="text-center">Nombre</th>
+        <th scope="col" class="text-center">Precio</th>
+        <th scope="col" class="text-center">Imagen</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <% productos.forEach(function(prod){ %>
+                <tr  class="text-body">
+                    <td class="align-middle product-list text-center"><%= prod.title %></td>
+                    <td class="align-middle product-list text-center">$ <%= prod.price %></td>
+                    <td>
+                        <img alt="ProductImg" class="img rounded mx-auto d-block" src=<%= prod.thumbnail %>>
+                    </td>
+                </tr>
+            <% }) %>
+    </tbody>
+
+  </table>
+    <a href="/" class="btn btn-primary m-3" role="button"> Home</a>
+</div>

@@ -1,0 +1,17 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 200px;
+}
+
+.text-head {
+    color: white;
+    font-size: 20px;
+    background: orange;
+}
+.product-list {
+    color: white;
+    font-size: 18px;
+}
